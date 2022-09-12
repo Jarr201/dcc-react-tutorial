@@ -4,12 +4,19 @@ import AddEntryForm from './Components/AddEntry/AddEntryForm';
 
 function App() {
   
-  const [entries, setEntries] = useState([{weight: 175, date: '11-23-2021'}])
+  const [entries, setEntries] = useState([{weight: 175, date: '11-23-2021'}, {weight:180, date: '11-29-2021'}])
   
+  function addNewEntry(entry){
+    
+    let tempEntries = [...entries, entry];
+    
+    setEntries(tempEntries);
+  }
+
   return (
     <div>
       <DisplayEntries parentEntries={entries} />
-      <AddEntryForm />
+      <AddEntryForm addNewEntryProperty={addNewEntry}/>
 
     </div>
   );
