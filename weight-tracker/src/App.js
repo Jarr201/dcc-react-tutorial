@@ -15,11 +15,15 @@ function App() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>175</td>
-            <td>11-23-2021</td>
-          </tr>
+          {entries.map((entry, index) => {
+            return(
+              <tr>
+                <td>{index}</td>
+                <td>{entry.weight}</td>
+                <td>{entry.date}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
