@@ -6,7 +6,15 @@ function App() {
   
   return (
     <div>
-      <h3>Hello World</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Entry Number</th>
+            <th>Weight</th>
+            <th>Entry Number</th>
+          </tr>
+        </thead>
+      </table>
     </div>
   );
 }
