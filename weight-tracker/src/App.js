@@ -18,7 +18,7 @@ function App() {
           {entries.map((entry, index) => {
             return(
               <tr>
-                <td>{index}</td>
+                <td>{index + 1}</td>
                 <td>{entry.weight}</td>
                 <td>{entry.date}</td>
               </tr>
